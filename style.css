@@ -1764,7 +1764,7 @@ input[type="radio"] + label, input[type="checkbox"] + label {
 }
 
 button {
-	background-color: #ffc740;
+	background-color: #009D4e;
 	border: 0;
 	-webkit-border-radius: 0;
 	border-radius: 0;
@@ -1787,7 +1787,7 @@ button .icon-search {
 }
 
 input[type="button"], input[type="submit"] {
-	background-color: #ffc740;
+	background-color: #009D4e;
 	border: 0;
 	-webkit-border-radius: 0;
 	border-radius: 0;
@@ -1877,7 +1877,7 @@ input[type="submit"].secondary:hover, input[type="submit"].secondary:focus {
 /*Contact Form*/
 .contact-submit,
 .form-submit {
-	background-color: #ffc740;
+	background-color: #009D4e;
 	overflow: hidden;
 	position: relative;
 	display: inline-block;
@@ -2227,7 +2227,7 @@ a:hover .nav-title {
 12.0 Navigation
 --------------------------------------------------------------*/
 .navigation-top {
-	background: #464646;
+	background: #009D4e;
 	font-size: 16px;
 	font-size: 1rem;
 	position: relative;
@@ -2250,7 +2250,7 @@ a:hover .nav-title {
   .navigation-top .current_page_item > a,
   .navigation-top .current-menu-parent > a,
   .navigation-top .current_page_parent > a {
-	color: #ffc740;
+	color: #fff;
 }
 
 .main-navigation {
@@ -2259,7 +2259,7 @@ a:hover .nav-title {
 }
 
 .main-navigation ul {
-	background: #464646;
+	background: #009D4e;
 	list-style: none;
 	margin: 0;
 	padding: 0 1.5em;
@@ -2347,7 +2347,7 @@ a:hover .nav-title {
 	margin: 0 auto;
 	padding: 1em;
 	text-shadow: none;
-	background: #ffc740;
+	background: #009D4e;
 }
 
 /* Display the menu toggle when JavaScript is available. */
@@ -2357,14 +2357,14 @@ a:hover .nav-title {
 }
 
 .menu-toggle:hover {
-	background: #ffc740;
+	background: #009D4e;
 	-webkit-box-shadow: none;
 	box-shadow: none;
 	color: #464646;
 }
 
 .menu-toggle:focus {
-	background: #ffc740;
+	background: #009D4e;
 	-webkit-box-shadow: none;
 	box-shadow: none;
 	color: #464646;
@@ -2529,7 +2529,7 @@ body.has-header-image .site-title, body.has-header-video .site-title, body.has-h
 	font-size: 1.1rem;
 	margin-bottom: 0;
 	display: block;
-	color: #ffc740 !important;
+	color: #009D4e !important;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -5384,7 +5384,7 @@ embed, iframe, object {
 	}
 	
 	.main-navigation ul {
-		background: #464646;
+		background: #009D4e;
 		padding: 0;
 	}
 	
