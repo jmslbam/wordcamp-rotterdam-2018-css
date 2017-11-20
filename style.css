@@ -2497,7 +2497,7 @@ body {
 /* Site branding */
 .site-branding {
 	padding: 1em 0;
-	background: url('https://raw.githubusercontent.com/jmslbam/wordcamp-rotterdam-2018-css/master/img/tim-gouw-73090.jpg') no-repeat center bottom;
+/*	background: url('https://raw.githubusercontent.com/jmslbam/wordcamp-rotterdam-2018-css/master/img/tim-gouw-73090.jpg') no-repeat center bottom; */
 	background-size: cover;
 	-webkit-transition: margin-bottom .2s;
 	transition: margin-bottom .2s;
@@ -2575,6 +2575,7 @@ body:not(.title-tagline-hidden) .site-branding-text {
 
 .custom-header {
 	position: relative;
+	background-color: #fff;
 }
 
 .custom-header-media {
@@ -2585,10 +2586,11 @@ body:not(.title-tagline-hidden) .site-branding-text {
 	right: 0;
 	top: 0;
 	width: 100%;
+	opacity: 0.1;
 }
 
 .custom-header-media img {
-	display: none !important;
+	/*display: none !important;*/
 }
 
 .has-header-image .custom-header-media img {
@@ -6231,10 +6233,6 @@ embed, iframe, object {
 	.site-footer {
 		padding: 0;
 	}
-}
-
-.custom-header-media .site-branding {
-	background-image: url('https://raw.githubusercontent.com/jmslbam/wordcamp-rotterdam-2018-css/master/img/tim-gouw-73090.jpg') !important;
 }
 
 @media screen and (min-width: 48em) {
