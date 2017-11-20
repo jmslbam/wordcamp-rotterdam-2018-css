@@ -2510,6 +2510,7 @@ body {
 	text-decoration: none;
 	-webkit-transition: opacity .2s;
 	transition: opacity .2s;
+	text-align: center;
 }
 
 .site-branding a:hover, .site-branding a:focus {
