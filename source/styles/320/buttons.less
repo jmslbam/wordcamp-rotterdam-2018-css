@@ -1,0 +1,60 @@
+
+
+a.btn {
+  display: inline-block;
+  padding: 7px 25px;
+  text-decoration: none;
+  color: #fff;
+  background: @brand-secondary;
+  text-transform: uppercase;
+  transition: all .3s ease 0;
+  font-size: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+a.btn:after {
+  display: block;
+  content: '';
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+  top: 100%;
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  left: 20%;
+  background: #fff;
+  opacity: .2;
+  -webkit-transition: all .21s ease-in-out;
+  -moz-transition: all .21s ease-in-out;
+  -o-transition: all .21s ease-in-out;
+  transition: all .21s ease-in-out;
+}
+
+a.btn:hover,
+a.btn:active {
+  text-decoration: none !important;
+  text-shadow: none;
+  color: #fff;
+}
+
+a.btn:hover:after,
+a.btn:active:after {
+  top: -850%;
+}
+
+a.btn-yellow {
+  background: @yellow;
+}
+
+a.btn-red {
+  background: @red;
+}
+
+a.btn-red:hover,
+a.btn-red:focus {
+  color: #fff;
+}
