@@ -14,6 +14,22 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
 */
+
+
+
+#random-color{
+	color: #f9f9f9; /* greylight */
+	color: #eaeaea; /* grey */
+	color: #dce0e0; /* dark gray */
+	color: #f48109;
+	color: #085D8F;
+	color: #F2D91A;
+	color: #ED3700;
+}
+
+
+
+
 img.grav-hijack {
 	display: none !important;
 }
@@ -2517,10 +2533,6 @@ body {
 	opacity: 1;
 }
 
-.home .site-branding {
-	height: 500px;
-}
-
 body.has-header-image .site-title, body.has-header-video .site-title, body.has-header-image .site-title a, body.has-header-video .site-title a {
 	color: #fff;
 }
@@ -3559,42 +3571,6 @@ body:not(.twentyseventeen-front-page) .entry-header {
 	color: #c02942;
 }
 
-/*Kalendarz wordupów*/
-.page-slug-kalendarz-wordupow .site-content .wrap {
-	max-width: 1170px;
-}
-
-.page-slug-kalendarz-wordupow .site-content .wrap .entry-content iframe {
-	width: 100%;
-	max-width: 100%;
-}
-
-.page-slug-uczestnicy .site-content .wrap {
-	max-width: 1170px;
-}
-
-.page-slug-uczestnicy #tix-attendees .tix-attendee-list {
-	padding-left: 0;
-}
-
-.page-slug-uczestnicy #tix-attendees .tix-attendee-list.tix-columns-3 {
-	width: 100%;
-}
-
-.page-slug-uczestnicy #tix-attendees .tix-attendee-list.tix-columns-3 img {
-	width: 90px;
-	height: 90px;
-}
-
-.page-slug-uczestnicy #tix-attendees .tix-attendee-list.tix-columns-3 li {
-	margin-bottom: 30px;
-	width: 25%;
-}
-
-.page-slug-uczestnicy #tix-attendees .tix-attendee-list .tix-field {
-	margin-left: 105px;
-}
-
 /*organizatorzy*/
 .wcorg-organizers .wcorg-organizer .wcorg-organizer-description {
 	position: relative;
@@ -3617,15 +3593,12 @@ body:not(.twentyseventeen-front-page) .entry-header {
 }
 
 /*Dla sponsorów*/
-.page-slug-zostan-sponsorem .site-content .wrap,
-.page-id-1242 .site-content .wrap {
-	max-width: 1170px;
-}
+
 
 /*Prelekcje*/
-.page-slug-program .site-content .wrap {
-	max-width: 1170px;
-}
+/*.page-slug-program .site-content .wrap {*/
+	/*max-width: 1170px;*/
+/*}*/
 
 .wcpt-schedule {
 	font-size: 14px;
@@ -3685,194 +3658,11 @@ body:not(.twentyseventeen-front-page) .entry-header {
 	background: #d4d4d4;
 }
 
-/*dla wszystkich*/
-.wcb-speaker-magdalena-paciorek.wcb-speaker-jakub-milczarek,
-.wcb-speaker-maciej-swoboda,
-.wcb-speaker-kasia-swiderska,
-.wcb-speaker-aleksander-kuczek,
-.wcb-speaker-adam-czajczyk,
-.wcb-speaker-arek-steplowski,
-.wcb-speaker-ewa-karaszkiewicz,
-.wcb-speaker-gienia-malenia,
-.wcb-speaker-magdalena-gorecka,
-.wcb-speaker-karol-trybulski,
-.wcb-speaker-olexij-fedorov,
-.wcb-speaker-tomasz-kolkiewicz,
-.wcb-speaker-maria-gorska,
-.wcb-speaker-rafal-tomal,
-.wcb-speaker-katarzyna-janoska,
-.wcb-speaker-dominik-kawula {
-	padding-top: 35px !important;
-	border-right: 2px solid #006f99 !important;
-	position: relative;
-}
-
-.wcb-speaker-magdalena-paciorek.wcb-speaker-jakub-milczarek:before,
-  .wcb-speaker-maciej-swoboda:before,
-  .wcb-speaker-kasia-swiderska:before,
-  .wcb-speaker-aleksander-kuczek:before,
-  .wcb-speaker-adam-czajczyk:before,
-  .wcb-speaker-arek-steplowski:before,
-  .wcb-speaker-ewa-karaszkiewicz:before,
-  .wcb-speaker-gienia-malenia:before,
-  .wcb-speaker-magdalena-gorecka:before,
-  .wcb-speaker-karol-trybulski:before,
-  .wcb-speaker-olexij-fedorov:before,
-  .wcb-speaker-tomasz-kolkiewicz:before,
-  .wcb-speaker-maria-gorska:before,
-  .wcb-speaker-rafal-tomal:before,
-  .wcb-speaker-katarzyna-janoska:before,
-  .wcb-speaker-dominik-kawula:before {
-	content: 'Dla wszystkich';
-	display: block;
-	position: absolute;
-	top: 9.8px;
-	right: 9.8px;
-	font-size: 10px;
-	background-color: #006f99;
-	padding: 1px 5px;
-	border-radius: 2px;
-	color: #fff;
-	font-weight: normal;
-}
-
-/* dla blogerow*/
-.wcb-speaker-bartosz-romanowski,
-.wcb-speaker-ola-gosciniak,
-.wcb-speaker-tomasz-palak,
-.wcb-speaker-lukasz-badziak {
-	padding-top: 35px !important;
-	border-right: 2px solid #61BD4F !important;
-	position: relative;
-}
-
-.wcb-speaker-bartosz-romanowski:before,
-  .wcb-speaker-ola-gosciniak:before,
-  .wcb-speaker-tomasz-palak:before,
-  .wcb-speaker-lukasz-badziak:before {
-	content: 'Dla blogerów';
-	display: block;
-	position: absolute;
-	top: 9.8px;
-	right: 9.8px;
-	font-size: 10px;
-	background-color: #61BD4F;
-	padding: 1px 5px;
-	border-radius: 2px;
-	color: #fff;
-	font-weight: normal;
-}
-
-/* dla programistow*/
-.wcb-speaker-tomasz-dziuda,
-.wcb-speaker-rafal-osinski,
-.wcb-speaker-michal-strzesniewski,
-.wcb-speaker-piotr-niewiadomski,
-.wcb-speaker-marcin-bot,
-.wcb-speaker-daniel-wlazlak,
-.wcb-speaker-marcin-pietrzak,
-.wcb-speaker-krzysztof-drozdz,
-.wcb-speaker-lukasz-wilczak,
-.wcb-speaker-kamil-porembinski,
-.wcb-speaker-szymon-kadzielawa,
-.wcb-speaker-bartosz-bilicki,
-.wcb-speaker-krzysztof-ozog,
-.wcb-speaker-marcin-krzeminski,
-.wcb-track-dla-programistow,
-.wcb-speaker-patryk-omiotek.wcb-track-dla-programistow {
-	padding-top: 35px !important;
-	border-right: 2px solid #c02942 !important;
-	position: relative;
-}
-
-.wcb-speaker-tomasz-dziuda:before,
-  .wcb-speaker-rafal-osinski:before,
-  .wcb-speaker-michal-strzesniewski:before,
-  .wcb-speaker-piotr-niewiadomski:before,
-  .wcb-speaker-marcin-bot:before,
-  .wcb-speaker-daniel-wlazlak:before,
-  .wcb-speaker-marcin-pietrzak:before,
-  .wcb-speaker-krzysztof-drozdz:before,
-  .wcb-speaker-lukasz-wilczak:before,
-  .wcb-speaker-kamil-porembinski:before,
-  .wcb-speaker-szymon-kadzielawa:before,
-  .wcb-speaker-bartosz-bilicki:before,
-  .wcb-speaker-krzysztof-ozog:before,
-  .wcb-speaker-marcin-krzeminski:before,
-  .wcb-track-dla-programistow:before,
-  .wcb-speaker-patryk-omiotek.wcb-track-dla-programistow:before {
-	content: 'Dla programistów';
-	display: block;
-	position: absolute;
-	top: 9.8px;
-	right: 9.8px;
-	font-size: 10px;
-	background-color: #c02942;
-	padding: 1px 5px;
-	border-radius: 2px;
-	color: #fff;
-	font-weight: normal;
-}
 
 .wcb-track-dla-programistow:before {
 	display: none;
 }
 
-/*warsztaty*/
-.wcb-speaker-krzysztof-ozog,
-.wcb-speaker-katarzyna-janoska.wcb-track-sala-b,
-.wcb-session-kontynuacja-warsztatow-3,
-.wcb-session-kontynuacja-warsztatow-9 {
-	border-bottom: 1px solid #fff;
-	vertical-align: middle !important;
-}
-
-.wcb-session-kontynuacja-warsztatow-3 .wcpt-session-title,
-.wcb-track-dla-programistow.wcb-track-sala-b .wcpt-session-title {
-	font-weight: normal;
-	font-size: 12px;
-}
-
-.wcb-session-kontynuacja-warsztatow-4,
-.wcb-session-kontynuacja-warsztatow-3,
-.wcb-session-kontynuacja-warsztatow-8,
-.wcb-session-kontynuacja-warsztatow-2 {
-	border-right: 2px solid #006f99 !important;
-	border-bottom: 1px solid #fff;
-	vertical-align: middle !important;
-}
-
-.wcb-session-kontynuacja-warsztatow-4 .wcpt-session-title,
-  .wcb-session-kontynuacja-warsztatow-3 .wcpt-session-title,
-  .wcb-session-kontynuacja-warsztatow-8 .wcpt-session-title,
-  .wcb-session-kontynuacja-warsztatow-2 .wcpt-session-title {
-	font-weight: normal;
-	font-size: 12px;
-}
-
-.wcb-session-kontynuacja-warsztatow-5,
-.wcb-session-kontynuacja-warsztatow-6,
-.wcb-session-kontynuacja-warsztatow-7 {
-	border-bottom: 1px solid #fff;
-	vertical-align: middle !important;
-}
-
-.wcb-session-kontynuacja-warsztatow-5 .wcpt-session-title,
-  .wcb-session-kontynuacja-warsztatow-6 .wcpt-session-title,
-  .wcb-session-kontynuacja-warsztatow-7 .wcpt-session-title {
-	font-weight: normal;
-	font-size: 12px;
-}
-
-.wcb-speaker-marcin-krzeminski.wcb-track-sala-b,
-.wcb-speaker-dominik-kawula.wcb-track-sala-b,
-.wcb-speaker-patryk-omiotek.wcb-track-dla-programistow {
-	border-bottom: 1px solid #fff;
-}
-
-.wcb-speaker-patryk-omiotek.wcb-track-dla-programistow .wcpt-session-title {
-	font-size: 14px;
-}
 
 /*--------------------------------------------------------------
 13.6 Footer
@@ -3950,18 +3740,31 @@ body:not(.twentyseventeen-front-page) .entry-header {
 
 .footer-widget-1 {
 	color: #fff;
-	background-color: #464646;
+	background-color: #f9f9f9;
 	background-image: none !important;
 	padding-top: 30px;
 	text-align: center;
 }
 
 .footer-widget-1 h2.widget-title {
-	color: #ffc740;
+	color: #fff;
 	font-size: 20px;
 	font-size: 1.3rem;
 	margin-bottom: 30px;
 }
+.footer-widget-1 h2.widget-title:after {
+	background: rgba(255,255,255,1);
+	content: "";
+	display: block;
+	height: .1rem;
+	margin: 1.4rem auto 1.2rem;
+	width: 6.5rem;
+}
+.footer-widget-1 .widget a {
+	color: #fff;
+}
+
+
 
 .jetpack_subscription_widget {
 	max-width: 700px;
@@ -4982,67 +4785,7 @@ embed, iframe, object {
 	}
 }
 
-@media screen and (min-width: 20em) and (max-width: 48em) {
-	.site-branding {
-		height: 360px !important;
-	}
-	
-	.column-frontpage-main-info a {
-		transition: all 1s ease-in-out;
-	}
-	
-	.column-frontpage-main-info a:before {
-		top: 8%;
-		width: 1000px;
-		height: 1000px;
-		-ms-transform: rotate(45deg);
-	/* IE 9 */
-		-webkit-transform: rotate(45deg);
-	/* Chrome, Safari, Opera */
-		transform: rotate(45deg);
-		transition: all .2s ease-in-out;
-	}
-	
-	.main-navigation li.menu-item-has-children .dropdown-toggle {
-		top: 0;
-		left: 0;
-		right: 0;
-		height: 45px;
-		width: 100%;
-		outline: none;
-	}
-	
-	.main-navigation li.menu-item-has-children .dropdown-toggle:after {
-		content: '';
-		display: inline-block;
-		right: 5px;
-		top: 18px;
-		left: auto;
-		position: absolute;
-		overflow: hidden;
-		height: 6px;
-		font-size: 1em;
-		width: 6px;
-		text-align: center;
-		-webkit-transform: rotate(45deg);
-	/* Chrome, Safari, Opera */
-		transform: rotate(45deg);
-		text-transform: none;
-		text-indent: -10px;
-		border-right: 1px solid #fff;
-		border-bottom: 1px solid #fff;
-	}
-	
-	.main-navigation li.menu-item-has-children .dropdown-toggle:hover:after {
-		border-right: 1px solid #ffc740;
-		border-bottom: 1px solid #ffc740;
-	}
-	
-	.main-navigation li.menu-item-has-children .dropdown-toggle svg {
-		display: none !important;
-	}
-}
-
+screen and (min-width: 48em)
 @media screen and (max-width: 30em) {
 	.page-slug-uczestnicy #tix-attendees .tix-attendee-list {
 		padding-left: 0;
@@ -5188,9 +4931,9 @@ embed, iframe, object {
 		padding-right: 0;
 	}
 	
-	.site-content .wrap {
-		max-width: 800px;
-	}
+	/*.site-content .wrap {*/
+		/*max-width: 800px;*/
+	/*}*/
 	
 	.home .panel-content .wrap {
 		max-width: 100%;
@@ -5208,7 +4951,7 @@ embed, iframe, object {
 	}
 	
 	.home .site-content-contain .site-main article:first-child .wrap {
-		margin-top: -140px;
+		/*margin-top: -140px;*/
 	}
 	
 	.has-sidebar:not(.error404) #primary {
@@ -5449,7 +5192,7 @@ embed, iframe, object {
 	}
 	
 	.main-navigation ul ul {
-		background: #464646;
+		background: #dce0e0;
 		left: -999em;
 		padding: 0;
 		position: absolute;
@@ -5837,12 +5580,32 @@ embed, iframe, object {
 		font-size: 14px;
 		font-size: .875rem;
 		line-height: 1.6;
-		margin-top: 3em;
+		margin-top: 12rem;
 	}
 	
 	.site-footer .widget-column.footer-widget-1 {
 		float: left;
-		width: 100%;
+		width: 90%;
+		margin: 0 5%;
+		display: flex;
+		justify-content: space-between;
+
+	}
+	.footer-widget-1 .widget {
+		width: 40%;
+		padding: 2rem;
+		margin: -8rem 0 0 0;
+	}
+
+	.footer-widget-1 .widget:first-child {
+		background: #009D4e;
+	}
+	.footer-widget-1 .widget:nth-child(2) {
+		background: #085D8F;
+	}
+
+	.footer-block {
+		display: block;
 	}
 	
 	.site-footer .widget-column.footer-widget-1 h2.widget-title {
@@ -6237,9 +6000,9 @@ embed, iframe, object {
 }
 
 @media screen and (min-width: 48em) {
-	.site-content .wrap {
-		max-width: 740px;
-	}
+	/*.site-content .wrap {*/
+		/*max-width: 740px;*/
+	/*}*/
 }
 
 h3 {
@@ -6325,9 +6088,7 @@ display: none;
 	}
 }
 
-#colophon {
-	margin-top: 0;
-}
+
 
 #panel4 .wrap,#post-166 .wrap {
 	padding-bottom: 0;
