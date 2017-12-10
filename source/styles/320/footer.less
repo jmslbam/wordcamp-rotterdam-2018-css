@@ -2,7 +2,9 @@
 13.6 Footer
 --------------------------------------------------------------*/
 .site-footer {
+  margin-top: 6rem;
   background-color: #ddd;
+  background-color: @graydarker;
 }
 
 .site-footer .wrap {
@@ -18,13 +20,14 @@
 .site-info {
   font-size: 14px;
   font-size: .875rem;
+  padding: .7em 0 0;
   margin-bottom: 1em;
   text-align: center;
   width: 100%;
 }
 
 .site-info a {
-  color: #666;
+  color: #ddd;
 }
 
 .site-info .sep {
@@ -40,36 +43,58 @@
 
 
 .footer-widget-1,
-.footer-widget-2{
-  color: #fff;
-  padding-top: 30px;
+.footer-widget-2 {
+  color: #ddd;
   text-align: center;
 }
 
+.footer-widget-1 .widget:first-child {
+  background: #009D4e;
+}
+.footer-widget-1 .widget:nth-child(2) {
+  background: #085D8F;
+}
 
-.footer-widget-1 h2.widget-title,
-.footer-widget-2 h2.widget-title {
-  color: #fff;
-  font-size: 20px;
-  font-size: 1.3rem;
-  margin-bottom: 30px;
+
+.footer-widget-1,
+.footer-widget-2 {
+
+  .widget {
+    padding: 3rem;
+    font-size: 1.2rem;
+  }
+
+  h2.widget-title {
+    color: #fff;
+    font-size: 1.6rem;
+    letter-spacing: .15rem;
+    text-transform: uppercase;
+  }
+
+  h2.widget-title:after {
+    background: rgba(255,255,255,1);
+    content: "";
+    display: block;
+    height: 2px;
+    margin: 1.4rem auto 1.2rem;
+    width: 6.5rem;
+  }
+
+  *:last-child {
+    margin-bottom: 0;
+  }
 }
-.footer-widget-1 h2.widget-title:after,
-.footer-widget-2 h2.widget-title:after {
-  background: rgba(255,255,255,1);
-  content: "";
-  display: block;
-  height: .1rem;
-  margin: 1.4rem auto 1.2rem;
-  width: 6.5rem;
-}
+
+
+
 .footer-widget-1 .widget a,
-.footer-widget-2 .widget a{
+.footer-widget-2 .widget a {
   color: #fff;
 }
+
+
 
 /* SOCIAL NAVIGATION */
-
 
 .social-navigation {
   font-size: 16px;
