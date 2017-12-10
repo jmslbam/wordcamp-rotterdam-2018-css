@@ -8,12 +8,13 @@
   .wcorg-sponsor-level-bronze {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    // justify-content: space-between; // fills out a single item in a 2 column row
+    justify-content: space-around; // center stuff
   }
 
   h2,
   .wcorg-sponsor {
-    flex: 1 1 0;
+    //flex: 1 1 0; // fills out a single item in a 2 column row
   }
 
   h2 {
@@ -32,6 +33,8 @@
   }
   img {
     display: block;
+    width: 80%;
+    margin: 0 auto;
   }
   > p {
     display: none; // hide the excerpt ellipses
