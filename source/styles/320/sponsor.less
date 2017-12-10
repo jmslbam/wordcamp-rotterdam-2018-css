@@ -1,4 +1,45 @@
+.wcorg-sponsor-level-gold {
+  h2 {
+    border-bottom: 2px solid @gold;
+  }
+}
+
+.wcorg-sponsor-level-silver {
+  h2 {
+    border-bottom: 2px solid @silver;
+  }
+}
+.wcorg-sponsor-level-bronze {
+  h2 {
+    border-bottom: 2px solid @bronze;
+  }
+}
+
+.wcorg-sponsor {
+  padding: 1em 0;
+  h3 {
+    text-align: center;
+    .screen-reader-text;
+  }
+  a {
+    display: block;
+  }
+  img {
+    display: block;
+    //width: 80%;
+    //margin: 0 auto 1rem auto;
+  }
+
+  p {
+    display: none; // hide the excerpt ellipses
+  }
+}
+
+
+
 .wcorg-sponsors {
+
+  text-align: center;
 
   .wcorg-sponsor-level-goud,
   .wcorg-sponsor-level-silver,
@@ -22,39 +63,7 @@
   }
 
   .wcorg-sponsor {
-    flex-basis: 50%;
+    flex-basis: 42%;
   }
 }
 
-.wcorg-sponsor-description {
-  padding: 1em 0;
-  a {
-    display: block;
-  }
-  img {
-    display: block;
-    width: 80%;
-    margin: 0 auto;
-  }
-  > p {
-    display: none; // hide the excerpt ellipses
-  }
-}
-
-
-.wcorg-sponsor-level-gold {
-  h2 {
-    border-bottom: 2px solid @gold;
-  }
-}
-
-.wcorg-sponsor-level-silver {
-  h2 {
-    border-bottom: 2px solid @silver;
-  }
-}
-.wcorg-sponsor-level-bronze {
-  h2 {
-    border-bottom: 2px solid @bronze;
-  }
-}
