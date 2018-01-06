@@ -62,45 +62,33 @@ input[type="radio"] + label, input[type="checkbox"] + label {
   font-weight: 400;
 }
 
-button {
-  background-color: #009D4e;
+.button,
+a.button,
+button,
+input[type="button"],
+input[type="submit"],
+.tix-js form input[type="submit"] {
+  background-color: @btn-background;
   border: 0;
-  -webkit-border-radius: 0;
   border-radius: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 14px;
-  font-size: .875rem;  line-height: 1;
-  padding: 1em 2em;
-  text-shadow: none;
-  -webkit-transition: background .2s;
-  transition: background .2s;
-}
-
-button .icon-search {
-}
-
-input[type="button"], input[type="submit"] {
-  background-color: #009D4e;
-  border: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  -webkit-box-shadow: none;
   box-shadow: none;
   color: #fff;
   cursor: pointer;
   display: inline-block;
   font-size: 14px;
   font-size: .875rem;
-  font-weight: 800;
+  font-weight: 400;
   line-height: 1;
   padding: 1em 2em;
+
   text-shadow: none;
-  -webkit-transition: background .2s;
+  text-transform: uppercase;
+  text-decoration: none !important;
+
   transition: background .2s;
+  &:hover {
+    background: @btn-background-hover;
+  }
 }
 
 input + button {
@@ -124,13 +112,6 @@ button:hover, button:focus {
   background: #c02942;
 }
 
-input[type="button"]:hover, input[type="button"]:focus {
-  background: #767676;
-}
-
-input[type="submit"]:hover, input[type="submit"]:focus {
-  background: #767676;
-}
 
 button.secondary:hover, button.secondary:focus {
   background: #bbb;
@@ -151,6 +132,8 @@ input[type="reset"].secondary:hover, input[type="reset"].secondary:focus {
 input[type="submit"].secondary:hover, input[type="submit"].secondary:focus {
   background: #bbb;
 }
+
+
 
 /* Placeholder text color -- selectors need to be separate to work. */
 ::-webkit-input-placeholder, :-moz-placeholder {
@@ -175,56 +158,23 @@ input[type="submit"].secondary:hover, input[type="submit"].secondary:focus {
 
 .contact-submit,
 .form-submit {
-  background-color: #009D4e;
   overflow: hidden;
   position: relative;
   display: inline-block;
 }
 
 
-.contact-form textarea, .contact-form input[type="text"], .contact-form input[type="email"] {
+.contact-form textarea,
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
   width: 100% !important;
   max-width: 100% !important;
 }
 
 .contact-submit input[type="submit"],
 .form-submit input[type="submit"] {
-  background: none;
-  text-transform: uppercase;
   position: relative;
   z-index: 1;
   font-weight: normal;
-}
-
-.contact-submit input[type="submit"]:hover,
-.form-submit input[type="submit"]:hover {
-  background: none;
-}
-
-.contact-submit:after,
-.form-submit:after {
-  display: block;
-  content: '';
-  -ms-transform: rotate(45deg);
-  /* IE 9 */
-  -webkit-transform: rotate(45deg);
-  /* Chrome, Safari, Opera */
-  transform: rotate(45deg);
-  top: 100%;
-  width: 1000px;
-  height: 1000px;
-  position: absolute;
-  left: 20%;
-  background: #fff;
-  opacity: .2;
-  -webkit-transition: all .21s ease-in-out;
-  -moz-transition: all .21s ease-in-out;
-  -o-transition: all .21s ease-in-out;
-  transition: all .21s ease-in-out;
-}
-
-.contact-submit:hover:after,
-.form-submit:hover:after {
-  top: -850%;
 }
 
