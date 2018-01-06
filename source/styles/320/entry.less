@@ -33,6 +33,7 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 
 .entry-header {
   text-align: center;
+  margin-bottom: 2em;
 }
 
 .entry-title {
@@ -78,7 +79,6 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 }
 
 .pagination, .comments-pagination {
-  border-top: 1px solid #eee;
   font-size: 14px;
   font-size: .875rem;
   font-weight: 800;
@@ -152,12 +152,22 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
   float: right;
 }
 
+
+.entry-content {
+  padding-bottom: 2em;
+}
+
 .entry-content h2 {
   //margin: 1em 0 2em 0;
 }
 
 .entry-content p + h2 {
   //margin: 50px 0 40px;
+}
+
+
+.entry-content p:last-child {
+  margin-bottom: 0;
 }
 
 .entry-content p .size-full {
@@ -186,9 +196,6 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 }
 
 
-.entry-content {
-  padding-bottom: 2em;
-}
 .blog article:after,
 .recent-posts article:after {
   display: block;
@@ -203,20 +210,20 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 
 
 
-body:not(.twentyseventeen-front-page) .entry-header {
-  padding: 1em 0 .2em;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-body:not(.twentyseventeen-front-page) .entry-content, body:not(.twentyseventeen-front-page) #comments {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-body:not(.twentyseventeen-front-page) .entry-header {
-  padding-top: 0;
-}
+//body:not(.twentyseventeen-front-page) .entry-header {
+//  padding: 1em 0 .2em;
+//  margin-left: auto;
+//  margin-right: auto;
+//}
+//
+//body:not(.twentyseventeen-front-page) .entry-content, body:not(.twentyseventeen-front-page) #comments {
+//  margin-left: auto;
+//  margin-right: auto;
+//}
+//
+//body:not(.twentyseventeen-front-page) .entry-header {
+//  padding-top: 0;
+//}
 
 .blog .entry-meta a.post-edit-link, .archive .entry-meta a.post-edit-link {
   color: #222;
