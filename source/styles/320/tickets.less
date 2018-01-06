@@ -1,13 +1,25 @@
 
-/*bilety*/
-.tix-js form input[type="submit"] {
-  background: #c02942;
-  text-transform: uppercase;
-  font-weight: normal;
+/* Overwrite CampTix styling */
+
+// Form validation notices
+// Wrap in div to overwrite the CSS specificity
+div {
+  .tix-error, .tix-notice, .tix-info {
+    margin-bottom: .5em;
+  }
+
+  .tix-info {
+    background: #b6e0cb;
+    border: solid 1px @success;
+  }
 }
 
-.tix-js form input[type="submit"]:hover {
-  background: #d12d48;
+
+// Form styling
+
+// Regular inputs etc
+.tix-ticket-form input[type="text"], .tix-ticket-form input[type="email"], .tix-ticket-form input[type="url"], .tix-ticket-form textarea, .tix-private-form input[type="text"], .tix-private-form input[type="email"], .tix-private-form input[type="url"], .tix-private-form textarea, .tix-attendee-form input[type="text"], .tix-attendee-form input[type="email"], .tix-attendee-form input[type="url"], .tix-attendee-form textarea, .tix-receipt-form input[type="text"], .tix-receipt-form input[type="email"], .tix-receipt-form input[type="url"], .tix-receipt-form textarea {
+  width: 100% !important; //sorry... CampTix is loaded later then our file
 }
 
 .tix-js form #tix-coupon-container #tix-coupon-input {
@@ -16,17 +28,11 @@
 }
 
 .tix-js form #tix-coupon-container input[type="submit"] {
-  background: #0085ba;
-  font-size: 12px;
-  padding: 7px 12px;
   float: right;
   clear: both;
   margin-top: 5px;
 }
 
-.tix-js form #tix-coupon-container input[type="submit"]:hover {
-  background: #0097d4;
-}
 
 .tix-js .tix-column-quantity select {
   padding-left: 5px;
@@ -41,8 +47,8 @@
 }
 
 .tix-js th.tix-column-description {
-  text-indent: -3000px;
-  overflow: hidden;
+  //text-indent: -3000px;
+  //overflow: hidden;
 }
 
 .tix-js .tix-column-price {
@@ -51,46 +57,49 @@
 
 .tix-js td.tix-column-remaining {
   text-align: center;
-  color: #c02942;
+  color: @brand-secondary;
 }
 
 
-
-#tix-attendees .tix-attendee-list {
-  margin-left: -3rem;
-  max-width: none;
+// Attendees List
+div#tix-attendees ul li,
+div#tix-attendees ul.tix-columns-2 li,
+div#tix-attendees ul.tix-columns-3 li {
+  //width: auto;
 }
 
-#tix-attendees .tix-attendee-list li {
-  display: inline-block;
-  float: none;
-  margin-right: 0;
-  width: 100%;
-  vertical-align: top;
-  padding-left: 3rem;
-}
 
-@media (min-width: 617px) {
-  #tix-attendees .tix-attendee-list li {
-    width: 50%;
+#tix-attendees ul {
+  margin-left: 0;
+  padding-left: 0;
+
+  li {
+    height: auto;
+    min-height: 100px;
+    display: block;
+    //display: flex;
+    float: none;
+    margin-right: 0;
+    margin-bottom: 2em;
+    width: 100%;
+    vertical-align: top;
+    text-align: center;
   }
+
 }
 
-@media (min-width: 992px) {
-  #tix-attendees .tix-attendee-list li {
-    width: 33%;
-  }
+div#tix-attendees .avatar {
+  background: @greylighter;
+  width: 94px;
+  height: 94px;
+  background-size: cover;
 }
 
-#tix-attendees .tix-attendee-list li:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 #tix-attendees .tix-attendee-list li .tix-field {
   margin-left: 0;
-  padding-left: 70px;
+  padding-left: 110px;
+  width: 80%; //put text a bit closer to image
 }
 
 #tix-attendees .tix-attendee-list li a {
