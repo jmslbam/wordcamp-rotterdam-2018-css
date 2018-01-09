@@ -6,13 +6,12 @@
   padding: 0;
 }
 
-.fake-panel {
 
-}
-.fake-panel,
+
 .twentyseventeen-panel {
-  max-width: 95%;
-  margin: 0 auto;
+  //margin-top: 2rem;
+  //margin-bottom: 2rem;
+  margin:0 auto;
   position: relative;
 }
 
@@ -65,30 +64,39 @@
 }
 
 
+// ROWS
 .row-full-width {
-  margin-left: -25vw;
-  margin-right: -25vw;
+  margin-left: -2rem;
+  margin-right: -2rem;
 }
 
+
+
+// TICKETS
 .row-tickets {
+
   .container-inner {
-    padding-right: 330px; // tickets image
+    //padding-right: 330px; // tickets image
   }
   padding-top: 1.8rem;
   padding-bottom: 2rem;
   background: @greylighter;
-  //color: #fff;
   font-size: 1.5em;
-  p {
-    .h2;
+
+  h2 {
     margin: 0;
     padding: 0;
-    text-align: center;
   }
-  img.alignright {
-    position: absolute;
-    right: 0;
-    top: -35px;
+
+
+  hr {
+    max-width: 30%;
+    margin: .5rem auto;
+  }
+  img {
+    //position: absolute;
+    //right: 0;
+    //top: -35px;
     transform: rotate(7deg);
   }
   img:hover {
