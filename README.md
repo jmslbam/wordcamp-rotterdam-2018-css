@@ -18,10 +18,11 @@ These are custom build HTML blocks that you have to enter into the WYSIWYG edito
 
 ```
 <div class="row-full-width row-tickets">
- <div class="container-inner">
- 	<p>Kom ff kijken in de <a href="/tickets">ticket</a> hoek voor een mooi prijsie!
-	 <img class="size-medium wp-image-347 alignright" src="source/images/tickets-liggend-small.png" alt="" width="300" height="auto" />
-	 </p>
-	 </div>
+    <div class="container-inner">
+        <h2>Haal <a href="/tickets">hier</a> je ticket!</h2>
+        <hr />
+        <h2>Get your ticket <a href="/tickets">here!</a></h2>
+        <a href="/tickets"><img class="tickets aligncenter wp-image-347 size-medium" src="http://2018.rotterdam.wordcamp.dev/content/uploads/sites/45/2018/01/tickets-liggend-small-300x225.png" alt="" width="300" height="225" /></a>
+    </div>
 </div>
 ```
