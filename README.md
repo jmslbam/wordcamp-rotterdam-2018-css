@@ -22,7 +22,7 @@ These are custom build HTML blocks that you have to enter into the WYSIWYG edito
         <h2>Haal <a href="/tickets">hier</a> je ticket!</h2>
         <hr />
         <h2>Get your ticket <a href="/tickets">here!</a></h2>
-        <a href="/tickets"><img class="tickets aligncenter wp-image-347 size-medium" src="http://2018.rotterdam.wordcamp.dev/content/uploads/sites/45/2018/01/tickets-liggend-small-300x225.png" alt="" width="300" height="225" /></a>
+        <a href="/tickets"><img class="tickets aligncenter wp-image-347 size-medium" src="tickets-liggend-small-300x225.png" alt="" width="300" height="225" /></a>
     </div>
 </div>
 ```
