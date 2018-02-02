@@ -15,6 +15,12 @@
   }
 }
 
+.wcorg-sponsor-level-supporter {
+  h2 {
+    border-bottom: 2px solid @brand-primary;
+  }
+}
+
 .wcorg-sponsor {
   padding: 1em 0;
   h3 {
@@ -27,7 +33,7 @@
   img {
     display: block;
     //width: 80%;
-    //margin: 0 auto 1rem auto;
+    margin: 0 auto 1rem auto;
   }
 
   p {
@@ -46,7 +52,8 @@
   .wcorg-sponsor-level-brons,
   .wcorg-sponsor-level-gold,
   .wcorg-sponsor-level-silver,
-  .wcorg-sponsor-level-bronze {
+  .wcorg-sponsor-level-bronze,
+  .wcorg-sponsor-level-supporter {
     display: flex;
     flex-flow: row wrap;
     // justify-content: space-between; // fills out a single item in a 2 column row
@@ -67,3 +74,8 @@
   }
 }
 
+
+// hide supporters level because of agreement in sponsor level
+.home  .wcorg-sponsor-level-supporter {
+  display: none;
+}

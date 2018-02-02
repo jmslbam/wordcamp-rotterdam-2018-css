@@ -1,27 +1,38 @@
 .wcorg-sponsors {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: stretch;
 
-  .wcorg-sponsor-level-goud,
-  .wcorg-sponsor-level-silver,
-  .wcorg-sponsor-level-brons,
   .wcorg-sponsor-level-gold,
   .wcorg-sponsor-level-silver,
-  .wcorg-sponsor-level-bronze {
+  .wcorg-sponsor-level-bronze,
+  .wcorg-sponsor-level-supporter {
     display: block;
-    flex-basis: 28%;
-  }
-
-  h2,
-  .wcorg-sponsor {
-
+    flex-basis: 46%;
   }
 
   .wcorg-sponsor {
     flex: 1;
   }
 
+}
+
+.home .wcorg-sponsors {
+  flex-wrap: nowrap;
+
+  .wcorg-sponsor-level-gold,
+  .wcorg-sponsor-level-silver,
+  .wcorg-sponsor-level-bronze,
+  .wcorg-sponsor-level-supporter {
+    display: block;
+    flex-basis: 28%;
+  }
+
+  // hide supporters level because of agreement in sponsor level
+  // overwrite the display block from above
+  .wcorg-sponsor-level-supporter {
+    display: none;
+  }
 }
