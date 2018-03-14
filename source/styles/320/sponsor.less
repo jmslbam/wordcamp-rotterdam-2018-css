@@ -30,13 +30,13 @@
   a {
     display: block;
     width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
   img {
     display: block;
-    //width: 80%;
     margin: 0 auto 1rem auto;
     max-height: 100px;
-    //height: 100%;
   }
 
   p {
@@ -49,6 +49,9 @@
 .wcorg-sponsors {
 
   text-align: center;
+  > div {
+    margin-bottom: 2em;
+  }
 
   .wcorg-sponsor-level-gold,
   .wcorg-sponsor-level-bronze,
@@ -57,6 +60,7 @@
     flex-flow: row wrap;
     // justify-content: space-between; // fills out a single item in a 2 column row
     justify-content: space-around; // center stuff
+    justify-content: space-between; // center stuff
   }
 
   h2,
@@ -78,12 +82,17 @@
 
   .wcorg-sponsor-level-gold .wcorg-sponsor {
     flex-basis: 100%;
+    img {
+      max-height: 125px;
+      //max-width: 80%;
+    }
   }
 
   .wcorg-sponsor-level-silver .wcorg-sponsor {
     flex-basis: 66%;
     width: 66%;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .wcorg-sponsor-level-bronze .wcorg-sponsor {
